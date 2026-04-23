@@ -1,0 +1,4 @@
+-keep class com.jnetai.phdresearch.data.** { *; }
+-keep class com.jnetai.phdresearch.model.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
