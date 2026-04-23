@@ -9,7 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jnetai.phdresearch.PhDResearch
 import com.jnetai.phdresearch.R
-import com.jnetai.phdresearch.binding.ActivityMainBinding
+import com.jnetai.phdresearch.databinding.ActivityMainBinding
 import com.jnetai.phdresearch.model.Paper
 import kotlinx.coroutines.launch
 

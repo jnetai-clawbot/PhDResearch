@@ -3,7 +3,7 @@ package com.jnetai.phdresearch.ui
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.jnetai.phdresearch.binding.ItemMainBinding
+import com.jnetai.phdresearch.databinding.ItemMainBinding
 import com.jnetai.phdresearch.model.Paper
 
 class PaperAdapter(private val onClick: (Paper) -> Unit) : RecyclerView.Adapter<PaperAdapter.VH>() {
@@ -13,8 +13,8 @@ class PaperAdapter(private val onClick: (Paper) -> Unit) : RecyclerView.Adapter<
     override fun getItemCount() = items.size
     override fun onBindViewHolder(h: VH, pos: Int) {
         val item = items[pos]
-        h.binding.titleText.text = item.title
-        h.binding.subtitleText.text = item.authors.ifEmpty { "No authors" } + " · " + item.status
-        h.binding.root.setOnClickListener { onClick(item) }
+        h.databinding.titleText.text = item.title
+        h.databinding.subtitleText.text = item.authors.ifEmpty { "No authors" } + " · " + item.status
+        h.databinding.root.setOnClickListener { onClick(item) }
     }
 }

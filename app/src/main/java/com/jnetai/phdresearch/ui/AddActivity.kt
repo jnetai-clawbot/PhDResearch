@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.jnetai.phdresearch.PhDResearch
 import com.jnetai.phdresearch.R
-import com.jnetai.phdresearch.binding.ActivityAddBinding
+import com.jnetai.phdresearch.databinding.ActivityAddBinding
 import com.jnetai.phdresearch.model.Paper
 import kotlinx.coroutines.launch
 
